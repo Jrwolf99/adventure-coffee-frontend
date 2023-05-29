@@ -1,48 +1,49 @@
+import Link from 'next/link';
 import React from 'react';
 
-export default function Navbar() {
+export default function MyNavbar() {
   return (
-    <nav className="bg-green-600">
+    <nav className="bg-olive">
       <div className="container mx-auto px-4 lg:px-[100px]">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a className="text-white font-bold text-lg" href="#">
+            <Link className="text-white font-bold text-lg" href="/">
               Adventure Coffee ☕
-            </a>
+            </Link>
           </div>
           <div>
             <ul className="flex items-center">
               <li>
-                <a
+                <Link
                   className="text-white hover:text-gray-300 px-3 py-2 transition-all duration-100"
                   href="/cups"
                 >
                   Cups
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-white hover:text-gray-300 px-3 py-2 transition-all duration-100"
                   href="/origins"
                 >
                   Origins
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-white hover:text-gray-300 px-3 py-2 transition-all duration-100"
                   href="/beans"
                 >
                   Beans
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-white hover:text-gray-300 px-3 py-2 transition-all duration-100"
                   href="/map"
                 >
                   Map
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
