@@ -28,7 +28,7 @@ export default function MyTable() {
   }, []);
 
   if (!mounted) {
-    return null;
+    return <div>Loading...</div>;
   }
 
   return (
